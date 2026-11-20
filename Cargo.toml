@@ -1,0 +1,17 @@
+[package]
+name = "lua-rs"
+version = "0.1.0"
+edition = "2024"
+description = "A parser, linter and semantic highlighter for Lua 5.3 (the Warcraft III Reforged scripting language)"
+license = "CC0-1.0"
+
+[[bin]]
+name = "lua-rs"
+path = "src/main.rs"
+
+[lib]
+name = "lua_rs"
+path = "src/lib.rs"
+
+[dependencies]
+parser-rs = { path = "../parser-rs" }
